@@ -9,6 +9,9 @@ public class PlayerInteractionScrypt : MonoBehaviour
     public LayerMask interactableLayerMask = 9;
     public IInteractable interactable;
 
+    public GameObject End;
+    int goal = 0;
+
     private void Update()
     {
         RaycastHit hit;
@@ -23,7 +26,14 @@ public class PlayerInteractionScrypt : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    goal++;
                     interactable.onInteract.Invoke();
+                    if(goal == 2)
+                    {
+                        End.SetActive(true);
+                        Time.timeScale = 0f;
+                        Cursor.lockState = CursorLockMode.Confined;
+                    }
                 }
             }
         }
