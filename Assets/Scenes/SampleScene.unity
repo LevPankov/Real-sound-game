@@ -892,7 +892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175632616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.22, y: -1.5, z: -77.2}
+  m_LocalPosition: {x: -58.2, y: -1.5, z: -77.2}
   m_LocalScale: {x: 1, y: 8, z: 10}
   m_Children: []
   m_Father: {fileID: 403140222}
@@ -1854,7 +1854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 11400000, guid: 9e0a6d5705eaec64ab63e6ac7132e0a7, type: 2}
+  material: {fileID: 11400000, guid: 5c0320d65bcecce4abf2efe02ff313aa, type: 2}
   exportAllChildren: 1
   terrainSimplificationLevel: 0
 --- !u!4 &403140222
@@ -4029,6 +4029,7 @@ GameObject:
   - component: {fileID: 804019937}
   - component: {fileID: 804019941}
   - component: {fileID: 804019942}
+  - component: {fileID: 804019943}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4109,7 +4110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804019936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: 1, z: -5.4}
+  m_LocalPosition: {x: -94.5, y: 1, z: -85.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -4147,6 +4148,35 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804019936}
   m_Enabled: 0
+--- !u!114 &804019943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804019936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd9ebf1401392e4bbd47fea32f47642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBakedListener: {fileID: 0}
+  applyReverb: 0
+  reverbType: 0
+  useAllProbeBatches: 0
+  probeBatches: []
+  mTotalDataSize: 0
+  mProbeDataSizes: 
+  mIdentifier:
+    type: 0
+    variation: 0
+    endpointInfluence:
+      center:
+        x: 0
+        y: 0
+        z: 0
+      radius: 0
+  mProbeBatchesUsed: []
 --- !u!1 &809188051
 GameObject:
   m_ObjectHideFlags: 0
@@ -8724,14 +8754,14 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.5060729
-      value: 0.5
-      inSlope: -0.9883951
-      outSlope: -0.9883951
+      time: 0.4927367
+      value: 0.33106995
+      inSlope: -1.3079499
+      outSlope: -1.3079499
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.22127216
     - serializedVersion: 3
       time: 0.9172363
       value: 0
@@ -8885,7 +8915,7 @@ MonoBehaviour:
   airAbsorptionLow: 1
   airAbsorptionMid: 1
   airAbsorptionHigh: 1
-  directivity: 1
+  directivity: 0
   directivityInput: 0
   dipoleWeight: 0
   dipolePower: 0
@@ -8894,7 +8924,7 @@ MonoBehaviour:
   occlusionInput: 0
   occlusionType: 0
   occlusionRadius: 1
-  occlusionSamples: 86
+  occlusionSamples: 90
   occlusionValue: 1
   transmission: 1
   transmissionType: 0
