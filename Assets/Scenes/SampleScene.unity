@@ -629,7 +629,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 719c87f57a6413e48b9d49e69d2d1098,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f1344513212be6c4c9f22cbeef1baec3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2649d17b48b27bb4db60ffd571528f23, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5130,7 +5130,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 719c87f57a6413e48b9d49e69d2d1098,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0e399f6ca3e53c44393be8970570a6df, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9403d729a00d8b549a6f82f4d3081a6c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.698
   m_Pitch: 1
@@ -7619,6 +7619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 719c87f57a6413e48b9d49e69d2d1098, type: 2}
+  slider: {fileID: 1228892725}
 --- !u!1 &1078704401
 GameObject:
   m_ObjectHideFlags: 0
@@ -13033,8 +13034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 1059574908}
-  slider: {fileID: 1228892725}
-  audioMixer: {fileID: 24100000, guid: 719c87f57a6413e48b9d49e69d2d1098, type: 2}
 --- !u!1 &2022170664
 GameObject:
   m_ObjectHideFlags: 0
